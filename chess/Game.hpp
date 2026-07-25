@@ -12,9 +12,7 @@ int SrcWidth =  (Pixal * 8);
 const char* Icon_local = "wn.png";
 //--
 //-- TO save some time
-#define	IsMOUSE (IsMouseButtonPressed(MOUSE_BUTTON_RIGHT)||\
-                 IsMouseButtonPressed(MOUSE_BUTTON_LEFT)||\
-                 IsMouseButtonPressed(MOUSE_BUTTON_MIDDLE)
+#define	IsMOUSE (IsMouseButtonPressed(MOUSE_BUTTON_RIGHT)|| IsMouseButtonPressed(MOUSE_BUTTON_LEFT)||IsMouseButtonPressed(MOUSE_BUTTON_MIDDLE)
 typedef struct RecMin {
 	uint16_t x = 0;
 	uint16_t y = 0;
