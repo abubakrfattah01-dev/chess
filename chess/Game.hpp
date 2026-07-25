@@ -13,7 +13,7 @@ const char* Icon_local = "wn.png";
 //--
 //-- TO save some time
 #define	IsMOUSE (IsMouseButtonPressed(MOUSE_BUTTON_RIGHT)||\
-                 IsMouseButtonPressed(MOUSE_BUTTON_LEFT))||\
+                 IsMouseButtonPressed(MOUSE_BUTTON_LEFT)||\
                  IsMouseButtonPressed(MOUSE_BUTTON_MIDDLE)
 typedef struct RecMin {
 	uint16_t x = 0;
@@ -26,7 +26,7 @@ typedef struct RecMin {
 		RecMin ref = *this;
 		ref.x += rm2.x;
 		ref.y += rm2.y;
-		return *this;
+		return ref;
 	}
 };
 void DrawRecMin (RecMin rm ,Color C) {
